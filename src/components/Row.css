@@ -1,0 +1,41 @@
+.row_poster {
+    width: 100;
+    /* object-fit = keep aspect ratio rega */ 
+    object-fit: contain; 
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+
+
+
+/* dont dsiplay the scrollbar but keep the functionality */
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_poster:hover {
+    transform: scale(1.08);
+}
+
+.row_posterLarge {
+    max-height: 250px;
+}
+
+.row_posterLarge:hover {
+    transform: scale(1.08);
+    max-height: 250px;
+}
+
+.row {
+    margin-left: 20px;
+    color: white;
+}
